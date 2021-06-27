@@ -1,0 +1,11 @@
+--- rearrange.py	2021-06-26 21:48:01.000000000 -0400
++++ rearrange2.py	2021-06-26 21:48:01.000000000 -0400
+@@ -4,7 +4,7 @@
+ 
+ 
+ def rearrange_name(name):
+-    result = re.search(r"^([\w .]*), ([\w .]*)$", name)
++    result = re.search(r"^([\w .-]*), ([\w .-]*)$", name)
+     if result is None:
+         return name
+     return "{} {}".format(result[2], result[1])
