@@ -4,6 +4,7 @@ import shutil
 import sys
 import socket
 
+#Adding a new comment on this fork
 def check_reboot():
     """Returns True if the computer has a pending reboot"""
     return os.path.exists("/run/reboot-required")
